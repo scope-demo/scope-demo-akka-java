@@ -1,0 +1,4 @@
+scope:
+  instrumentation:
+    http:
+      payloads: true
