@@ -14,7 +14,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <scope.agent.version>0.2.1-beta.6</scope.agent.version>
+    <scope.agent.version>0.2.1</scope.agent.version>
     <scala.version>2.12</scala.version>
     <akka.version>2.5.25</akka.version>
   </properties>
