@@ -1,4 +1,6 @@
 scope:
+  code_path: true
+  code_path_base_packages: "com.undefinedlabs.scope"
   instrumentation:
     http:
       payloads: true
