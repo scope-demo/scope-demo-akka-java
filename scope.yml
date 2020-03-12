@@ -1,6 +1,9 @@
-scope:
-  code_path: true
-  code_path_base_packages: "com.undefinedlabs.scope"
-  instrumentation:
-    http:
-      payloads: true
+logger:
+  level: "debug"
+  root: "/home/runner/work/scope-demo-akka-java/scope-demo-akka-java/logs"
+code_path:
+  enabled: true
+  base_packages: "com.undefinedlabs.scope"
+instrumentation:
+  http:
+    payloads: true
