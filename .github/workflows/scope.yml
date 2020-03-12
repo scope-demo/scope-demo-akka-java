@@ -1,0 +1,25 @@
+name: Scope
+on:
+  push:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - name: Scope for Maven
+      uses: undefinedlabs/scope-for-maven-action@v1
+      with:
+        dsn: ${{secrets.SCOPE_DSN}}
+        command: ./mvnw clean verify -U -fae
+    - uses: actions/upload-artifact@v1
+      if: always()
+      with:
+        name: scopelogs
+        path: /home/runner/work/scope-demo-akka-java/scope-demo-akka-java/logs    
