@@ -14,7 +14,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Scope for Maven
-      uses: undefinedlabs/scope-for-maven-action@v1
+      uses: undefinedlabs/scope-for-maven-action@beta
       with:
         dsn: ${{secrets.SCOPE_DSN}}
         command: ./mvnw clean verify -U -fae
